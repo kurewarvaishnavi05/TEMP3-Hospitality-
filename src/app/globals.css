@@ -1,26 +1,85 @@
+/* Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Manrope:wght@200..800&display=swap');
+
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --surface: #0a0a0a;
+  --accent: #b09677;
+  --muted: #c4b197;
+  --background: #f8f7f5;
+  --foreground: #121210;
+  
+  --border: rgba(0, 0, 0, 0.1);
+  --ring: #b09677;
+  
+  --font-serif: 'Manrope', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Inter', sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-display);
+  --font-display: var(--font-display);
 }
 
 body {
-  background: var(--background);
+  font-family: var(--font-sans);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* Lenis recommended css */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
 }
