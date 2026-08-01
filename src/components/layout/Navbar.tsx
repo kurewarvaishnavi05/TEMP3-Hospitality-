@@ -28,10 +28,13 @@ export function Navbar() {
 
   return (
     <>
-      <header
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className={cn(
-          'fixed w-full top-0 z-50 transition-all duration-500 text-[#f8f6f0]',
-          scrolled ? 'py-4 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5' : 'py-6 md:py-8 bg-transparent border-b border-transparent'
+          'fixed w-full top-0 z-50 transition-all duration-700 text-[#f8f6f0]',
+          scrolled ? 'py-3 bg-[#0a0a0a]/60 backdrop-blur-xl border-b border-white/10' : 'py-8 bg-transparent border-b border-transparent'
         )}
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-16 flex items-center justify-between">
@@ -48,7 +51,8 @@ export function Navbar() {
                   href={link.href}
                   className="hover:text-[#b09677] transition-colors pb-1 border-b border-transparent hover:border-[#b09677]"
                 >
-                  {link.name}
+                  <span className="relative z-10 group-hover:text-[#b09677] transition-colors duration-500">{link.name}</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[#b09677] transition-all duration-500 ease-out group-hover:w-full"></span>
                 </Link>
               ))}
             </nav>
@@ -73,7 +77,7 @@ export function Navbar() {
             </div>
           </button>
         </div>
-      </header>
+      </motion.header>
 
       {/* Mobile Menu */}
       <AnimatePresence>

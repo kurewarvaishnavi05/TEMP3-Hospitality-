@@ -15,20 +15,20 @@ export default function Home() {
       <EditorialStorytelling />
       
       {/* Signature Suites Section */}
-      <section className="py-32 bg-background relative z-10">
+      <section className="py-40 bg-background relative z-10">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
             <div>
-              <span className="text-xs uppercase tracking-[0.3em] text-accent mb-4 block">Our Accommodations</span>
-              <h2 className="text-4xl md:text-5xl font-serif text-white">Signature Suites</h2>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-accent mb-4 block font-medium">Our Accommodations</span>
+              <h2 className="text-5xl md:text-7xl font-serif text-white font-light">Signature Suites</h2>
             </div>
-            <Link href="/rooms" className="flex items-center gap-2 text-xs uppercase tracking-widest text-muted hover:text-accent transition-colors">
+            <Link href="/rooms" className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-muted hover:text-accent transition-colors font-medium">
               <span>View All Suites</span>
               <ArrowRight size={14} />
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <LuxuryCard 
               title="The Ocean Villa"
               description="Panoramic ocean views with a private infinity pool and direct beach access."

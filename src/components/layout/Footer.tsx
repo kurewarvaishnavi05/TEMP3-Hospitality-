@@ -7,28 +7,27 @@ export function Footer() {
   return (
     <footer className="bg-surface pt-24 pb-12 border-t border-white/5 relative z-10">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
-          
-          {/* Brand & Newsletter */}
-          <div className="col-span-1 md:col-span-2 flex flex-col items-start">
-            <h2 className="text-4xl lg:text-5xl font-serif text-accent uppercase tracking-widest mb-6">Aura</h2>
-            <p className="text-muted max-w-md font-sans mb-8 leading-relaxed">
-              Experience the pinnacle of luxury and serenity. Join our exclusive newsletter for curated offers and destination stories.
-            </p>
-            <div className="relative w-full max-w-md">
-              <input 
-                type="email" 
-                placeholder="YOUR EMAIL ADDRESS" 
-                className="w-full bg-background border border-white/10 rounded-none px-4 py-4 text-sm font-sans tracking-widest text-foreground focus:outline-none focus:border-accent transition-colors"
-              />
-              <button 
-                className="absolute right-0 top-0 bottom-0 px-6 bg-accent text-background hover:bg-white transition-colors flex items-center justify-center"
-                data-magnetic="true"
-              >
-                <ArrowRight size={20} />
-              </button>
-            </div>
+        <div className="flex flex-col items-center justify-center mb-24 text-center">
+          <h2 className="text-[6rem] sm:text-[8rem] lg:text-[12rem] font-serif text-accent uppercase tracking-widest leading-none mb-12">Aura</h2>
+          <p className="text-muted max-w-lg font-sans mb-10 leading-[1.8] font-light">
+            Experience the pinnacle of luxury and serenity. Join our exclusive newsletter for curated offers and destination stories.
+          </p>
+          <div className="relative w-full max-w-md mx-auto">
+            <input 
+              type="email" 
+              placeholder="YOUR EMAIL ADDRESS" 
+              className="w-full bg-transparent border-b border-white/20 px-4 py-4 text-xs font-sans tracking-[0.2em] text-center text-foreground focus:outline-none focus:border-accent transition-colors placeholder:text-muted/50"
+            />
+            <button 
+              className="absolute right-0 top-0 bottom-0 px-4 text-accent hover:text-white transition-colors flex items-center justify-center"
+            >
+              <ArrowRight size={18} />
+            </button>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20 justify-items-center md:justify-items-start border-t border-white/10 pt-16">
+
 
           {/* Links */}
           <div className="flex flex-col gap-4">

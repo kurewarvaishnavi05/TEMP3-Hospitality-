@@ -16,10 +16,6 @@
   
   --border: rgba(0, 0, 0, 0.1);
   --ring: #b09677;
-  
-  --font-serif: 'Manrope', sans-serif;
-  --font-sans: 'Manrope', sans-serif;
-  --font-display: 'Inter', sans-serif;
 }
 
 @theme inline {
@@ -31,10 +27,10 @@
   --color-border: var(--border);
   --color-ring: var(--ring);
 
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
-  --font-heading: var(--font-display);
-  --font-display: var(--font-display);
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 body {

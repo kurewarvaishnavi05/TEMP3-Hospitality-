@@ -36,19 +36,19 @@ export function Hero() {
       <motion.div style={{ y, opacity }} className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <motion.div
           animate={{
-            scale: [1, 1.1],
-            x: mousePosition.x,
-            y: mousePosition.y
+            scale: [1.05, 1.15],
+            x: mousePosition.x * 0.5,
+            y: mousePosition.y * 0.5
           }}
           transition={{
             scale: {
-              duration: 20,
+              duration: 30,
               ease: "linear",
               repeat: Infinity,
               repeatType: "reverse"
             },
-            x: { type: "spring", stiffness: 50, damping: 20 },
-            y: { type: "spring", stiffness: 50, damping: 20 }
+            x: { type: "spring", stiffness: 30, damping: 20 },
+            y: { type: "spring", stiffness: 30, damping: 20 }
           }}
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
@@ -148,6 +148,29 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-20 pointer-events-none"
+      >
+        <span className="text-[9px] tracking-[0.3em] uppercase text-[#c4b197]">Scroll</span>
+        <div className="w-[1px] h-[60px] bg-white/20 relative overflow-hidden">
+          <motion.div
+            animate={{
+              y: ["-100%", "100%"]
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="absolute inset-0 w-full h-full bg-[#c4b197]"
+          />
+        </div>
+      </motion.div>
     </section>
   );
 }
