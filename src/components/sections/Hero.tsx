@@ -58,9 +58,9 @@ export function Hero() {
             muted
             playsInline
             preload="auto"
-            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
+            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0 opacity-60"
           >
-            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
