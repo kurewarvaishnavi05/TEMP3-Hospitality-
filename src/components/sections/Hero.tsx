@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 export function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -52,14 +52,16 @@ export function Hero() {
           }}
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
-          <Image
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
-            alt="Luxury Resort"
-            fill
-            priority
-            className="object-cover object-center pointer-events-none"
-            sizes="100vw"
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
+          >
+            <source src="https://cdn.pixabay.com/video/2019/11/05/28608-370597118_large.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </motion.div>
       </motion.div>
 
