@@ -59,7 +59,7 @@ export function Hero() {
             playsInline
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           >
-            <source src="https://cdn.pixabay.com/video/2019/11/05/28608-370597118_large.mp4" type="video/mp4" />
+            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
