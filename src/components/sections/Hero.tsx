@@ -57,6 +57,7 @@ export function Hero() {
             loop
             muted
             playsInline
+            preload="auto"
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           >
             <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
