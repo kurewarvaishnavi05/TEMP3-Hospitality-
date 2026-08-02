@@ -60,7 +60,7 @@ export function Hero() {
             preload="auto"
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           >
-            <source src="/hero-bg.mp4" type="video/mp4" />
+            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
