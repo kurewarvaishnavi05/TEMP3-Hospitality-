@@ -7,13 +7,15 @@ const founders = [
   {
     name: "Mr. Mhaske Mahesh",
     role: "CEO / MANAGING DIRECTOR",
-    quote: "Our vision was to create a sanctuary where luxury is felt, not just seen. Every detail is curated to provide an unforgettable experience for our guests.",
+    description: "With a deep understanding of hospitality operations and brand building, Mahesh leads MMM Impact with a vision to create memorable experiences and long-term value.",
+    quote: "Hospitality is not about service, it is about creating connection.",
     image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2070&auto=format&fit=crop"
   },
   {
     name: "Mr. Kulkarni Ruturaj",
     role: "CHIEF OPERATING OFFICER",
-    quote: "Operational excellence is at the heart of our hospitality. We strive to anticipate every need and exceed expectations at every touchpoint.",
+    description: "Guided by strategic thinking and operational discipline, Ruturaj ensures every brand is built on strong foundations and future-ready practices.",
+    quote: "Great brands are built with clarity, consistency and care.",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2070&auto=format&fit=crop"
   }
 ];
@@ -51,9 +53,9 @@ export function VisionaryPillars() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.2, duration: 0.8 }}
-              className="flex flex-col"
+              className="flex flex-col xl:flex-row gap-8 items-start"
             >
-              <div className="relative aspect-[3/4] w-3/4 max-w-sm mx-auto md:mx-0 mb-8 overflow-hidden group">
+              <div className="relative w-full xl:w-[45%] aspect-[3/4] overflow-hidden group shrink-0">
                 <Image 
                   src={founder.image} 
                   alt={founder.name}
@@ -61,14 +63,22 @@ export function VisionaryPillars() {
                   className="object-cover transition-transform duration-1000 group-hover:scale-105 filter grayscale hover:grayscale-0"
                 />
               </div>
-              <div className="text-center md:text-left">
-                <h3 className="text-3xl font-serif text-[#121210] mb-2">{founder.name}</h3>
-                <p className="text-[#b09677] text-xs uppercase tracking-widest font-medium mb-6">
-                  {founder.role}
-                </p>
-                <p className="text-[#121210]/70 font-light leading-relaxed font-serif text-lg italic">
-                  &ldquo;{founder.quote}&rdquo;
-                </p>
+              <div className="text-left xl:w-[55%] flex flex-col justify-between h-full pt-4">
+                <div>
+                  <h3 className="text-3xl font-serif text-[#121210] mb-2">{founder.name}</h3>
+                  <p className="text-[#b09677] text-xs uppercase tracking-widest font-medium mb-8">
+                    {founder.role}
+                  </p>
+                  <p className="text-[#121210]/70 font-sans font-light text-sm leading-relaxed mb-12">
+                    {founder.description}
+                  </p>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <span className="text-[#b09677] font-serif text-4xl leading-none mt-1">&ldquo;</span>
+                  <p className="text-[#121210] font-sans font-medium text-sm italic">
+                    {founder.quote}&rdquo;
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
