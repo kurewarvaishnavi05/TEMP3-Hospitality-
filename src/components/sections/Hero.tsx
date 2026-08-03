@@ -3,7 +3,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Bell, Key, Crown, ArrowRight, ArrowDown } from 'lucide-react';
 
 
@@ -54,13 +53,10 @@ export function Hero() {
           }}
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
-          <Image
-            src="/hotel-arrival.jpg"
+          <img
+            src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Luxury Hotel Entrance"
-            fill
-            priority
-            quality={100}
-            className="object-cover object-center pointer-events-none"
+            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           />
         </motion.div>
       </motion.div>
