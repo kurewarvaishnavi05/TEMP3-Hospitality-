@@ -2,7 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { EditorialStorytelling } from "@/components/sections/EditorialStorytelling";
 import { LuxuryGallery } from "@/components/sections/LuxuryGallery";
 import { Awards } from "@/components/sections/Awards";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { VisionaryPillars } from "@/components/sections/VisionaryPillars";
 import { InstagramFeed } from "@/components/sections/InstagramFeed";
 import { LuxuryCard } from "@/components/cards/LuxuryCard";
 import Link from "next/link";
@@ -56,7 +56,7 @@ export default function Home() {
 
       <LuxuryGallery />
       <Awards />
-      <Testimonials />
+      <VisionaryPillars />
       <InstagramFeed />
     </>
   );
