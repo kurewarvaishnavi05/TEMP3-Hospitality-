@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
+import { Bell, Key, Crown, ArrowRight, ArrowDown } from 'lucide-react';
 
 
 export function Hero() {
@@ -65,105 +66,93 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full h-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col justify-center">
         <div className="mt-16 md:mt-20">
-          <motion.span 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-6 md:mb-8 block text-[#c4b197] font-bold"
-          >
-            AURA SIGNATURE EXPERIENCE
-          </motion.span>
-          
           <h1 
-            className="font-heading mb-8 md:mb-10 leading-[0.95] max-w-[1000px] text-[#F5F5F5] font-[200] tracking-[-0.04em] text-[clamp(2.2rem,4vw,3.2rem)] md:text-[clamp(3rem,5vw,4.5rem)] lg:text-[clamp(4rem,6vw,6.5rem)] antialiased"
+            className="font-serif mb-6 leading-[1.05] max-w-[1000px] text-[#E3D8C8] text-[clamp(3.5rem,6vw,5.5rem)] md:text-[clamp(4.5rem,7vw,7rem)] lg:text-[clamp(5.5rem,8vw,8.5rem)] antialiased"
           >
-            <span className="block overflow-hidden">
-              {"Timeless elegance".split('').map((char, index) => (
-                <motion.span
-                  key={`line1-${index}`}
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.3 + index * 0.02,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="inline-block"
-                >
-                  {char === ' ' ? '\u00A0' : char}
-                </motion.span>
-              ))}
-            </span>
-            <span className="block overflow-hidden">
-              {"that stays with you.".split('').map((char, index) => (
-                <motion.span
-                  key={`line2-${index}`}
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.5 + index * 0.02,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="inline-block"
-                >
-                  {char === ' ' ? '\u00A0' : char}
-                </motion.span>
-              ))}
-            </span>
+            <motion.span 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              className="block"
+            >
+              Timeless
+            </motion.span>
+            <motion.span 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="block"
+            >
+              elegance
+            </motion.span>
+            <motion.span 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="block italic text-[clamp(2.5rem,4.5vw,4rem)] md:text-[clamp(3.5rem,5.5vw,5rem)] lg:text-[clamp(4.2rem,6.5vw,6rem)] mt-2"
+            >
+              that stays with you.
+            </motion.span>
           </h1>
           
           <motion.p 
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[13px] md:text-[15px] text-[#e0dacd] max-w-[540px] mb-12 md:mb-16 leading-[1.9] font-light"
+            transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-sm md:text-base text-[#E3D8C8]/80 max-w-[400px] mb-12 md:mb-16 leading-[1.8] font-light"
           >
-            Discover an unforgettable escape crafted with exceptional hospitality, refined experiences, and timeless luxury.
+            Discover curated stays and immersive experiences in the world's most exceptional destinations.
           </motion.p>
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row gap-4 md:gap-6"
+            transition={{ duration: 1, delay: 1, ease: [0.16, 1, 0.3, 1] }}
           >
             <Link 
               href="/rooms"
-              className="px-8 py-4 bg-[#f8f6f0] text-[#0a0a0a] text-[10px] tracking-[0.2em] uppercase hover:bg-white transition-all duration-300 font-medium text-center shadow-[0_10px_40px_-15px_rgba(0,0,0,0.3)]"
+              className="group inline-flex items-center justify-between min-w-[200px] px-6 py-4 border border-[#E3D8C8]/30 text-[#E3D8C8] hover:border-[#E3D8C8] transition-all duration-500 text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#E3D8C8]/5 backdrop-blur-sm"
             >
-              EXPLORE SUITES
-            </Link>
-            <Link 
-              href="/booking"
-              className="px-8 py-4 border border-[#c4b197]/50 text-[#f8f6f0] hover:border-[#c4b197] transition-all duration-300 text-[10px] tracking-[0.2em] uppercase font-medium text-center hover:bg-[#c4b197]/10 backdrop-blur-sm"
-            >
-              BOOK YOUR STAY
+              <span>EXPLORE STAYS</span>
+              <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Bottom Bar */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-20 pointer-events-none"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-0 left-0 w-full border-t border-[#E3D8C8]/10 bg-gradient-to-t from-black/60 to-transparent"
       >
-        <span className="text-[9px] tracking-[0.3em] uppercase text-[#c4b197]">Scroll</span>
-        <div className="w-[1px] h-[60px] bg-white/20 relative overflow-hidden">
-          <motion.div
-            animate={{
-              y: ["-100%", "100%"]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-            className="absolute inset-0 w-full h-full bg-[#c4b197]"
-          />
+        <div className="max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between py-6 gap-6 md:gap-0">
+          <div className="flex items-center gap-12 text-[#E3D8C8]/70 text-[10px] tracking-[0.2em] uppercase font-medium">
+            <div className="flex items-center gap-3">
+              <Bell size={16} className="text-[#E3D8C8]" />
+              <span className="hidden sm:inline">SIGNATURE HOSPITALITY</span>
+            </div>
+            <div className="hidden md:block w-[1px] h-4 bg-[#E3D8C8]/20" />
+            <div className="flex items-center gap-3">
+              <Key size={16} className="text-[#E3D8C8]" />
+              <span className="hidden sm:inline">CURATED EXPERIENCES</span>
+            </div>
+            <div className="hidden md:block w-[1px] h-4 bg-[#E3D8C8]/20" />
+            <div className="flex items-center gap-3">
+              <Crown size={16} className="text-[#E3D8C8]" />
+              <span className="hidden sm:inline">MEMORABLE STAYS</span>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-6">
+            <span className="text-[#E3D8C8]/70 text-[10px] tracking-[0.2em] uppercase font-medium hidden sm:inline">
+              SCROLL TO DISCOVER
+            </span>
+            <div className="w-8 h-8 rounded-full border border-[#E3D8C8]/30 flex items-center justify-center text-[#E3D8C8]">
+              <ArrowDown size={14} className="animate-bounce" />
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>
