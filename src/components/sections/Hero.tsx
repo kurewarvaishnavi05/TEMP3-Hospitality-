@@ -35,30 +35,13 @@ export function Hero() {
     <section ref={container} className="relative w-full h-[100vh] min-h-[700px] bg-[#0a0a0a] overflow-hidden text-[#f8f6f0]">
       {/* Parallax Background */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        <motion.div
-          animate={{
-            scale: [1.05, 1.15],
-            x: mousePosition.x * 0.5,
-            y: mousePosition.y * 0.5
-          }}
-          transition={{
-            scale: {
-              duration: 30,
-              ease: "linear",
-              repeat: Infinity,
-              repeatType: "reverse"
-            },
-            x: { type: "spring", stiffness: 30, damping: 20 },
-            y: { type: "spring", stiffness: 30, damping: 20 }
-          }}
-          className="absolute inset-[-5%] w-[110%] h-[110%]"
-        >
+        <div className="absolute inset-0 w-full h-full">
           <img
             src="/aura-hero.jpg.jpeg?v=1"
             alt="Luxury Hotel Entrance"
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           />
-        </motion.div>
+        </div>
       </motion.div>
 
       {/* Overlays removed per user request */}
