@@ -19,7 +19,7 @@ export default function DiningPage() {
       <section ref={container} className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 w-full h-full z-0">
           <Image
-            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2074&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
             alt="Fine Dining"
             fill
             priority
