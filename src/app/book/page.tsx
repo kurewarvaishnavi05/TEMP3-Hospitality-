@@ -160,6 +160,13 @@ export default function BookingPage() {
             </div>
 
             <button 
+              onClick={() => {
+                if (!checkIn || !checkOut) {
+                  alert("Please select your check-in and check-out dates.");
+                  return;
+                }
+                alert(`Searching for availability at ${destination} from ${checkIn} to ${checkOut}...\\n\\nPlease note: Our booking system is currently undergoing scheduled maintenance. Please contact our reservations team directly to secure your stay.`);
+              }}
               className="w-full py-5 bg-[#0a0a0a] text-[#f8f6f0] hover:bg-[#b09677] transition-colors duration-500 flex items-center justify-center gap-3 text-[12px] uppercase tracking-[0.2em] font-medium"
             >
               <Search size={16} />
