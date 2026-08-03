@@ -89,13 +89,9 @@ export default function ExperiencesPage() {
                 Discover Our Spa
               </Link>
             </div>
-            <div className="w-full lg:w-1/2 h-[60vh] min-h-[500px] relative">
-              <Image
-                src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop"
-                alt="Spa Treatment"
-                fill
-                className="object-cover"
-              />
+            <div className="w-full lg:w-1/2 h-[60vh] min-h-[500px] relative bg-[#1a1a1a] flex items-center justify-center">
+              {/* Image removed per user request. Waiting for new upload. */}
+              <span className="text-[#f8f6f0]/30 tracking-widest uppercase text-xs">Waiting for new image</span>
             </div>
           </div>
         </div>
