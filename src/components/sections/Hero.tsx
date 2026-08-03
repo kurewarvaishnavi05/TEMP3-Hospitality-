@@ -54,7 +54,7 @@ export function Hero() {
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
           <img
-            src="/hotel-arrival.jpg?v=2"
+            src="/hero-bg.jpg.jpeg?v=1"
             alt="Luxury Hotel Entrance"
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           />
