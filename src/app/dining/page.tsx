@@ -54,10 +54,10 @@ export default function DiningPage() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
             <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative order-2 lg:order-1">
               <Image
-                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1414235077428-338988a2e8c0?q=80&w=2070&auto=format&fit=crop"
                 alt="Signature Restaurant"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover transition-all duration-700"
               />
             </div>
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
