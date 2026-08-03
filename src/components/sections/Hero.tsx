@@ -53,8 +53,8 @@ export function Hero() {
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
           <img
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt="Hospitality Hotel Service"
+            src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Luxury Hotel Entrance"
             className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           />
         </motion.div>
