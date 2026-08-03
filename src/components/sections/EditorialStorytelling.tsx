@@ -70,10 +70,10 @@ export function EditorialStorytelling() {
         {/* Story 2 */}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
           <div className="w-full lg:w-[50%] flex gap-4 h-[80vh] min-h-[600px] relative z-10">
-            <div className="w-1/2 h-full relative overflow-hidden mt-12">
+            <div className="w-1/2 h-[85%] relative overflow-hidden mt-auto">
               <motion.div style={{ y: y2 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1542314831-c6a4d27ce6a2?q=80&w=2070&auto=format&fit=crop" 
+                  src="/arch-1.jpg" 
                   alt="Modern Hotel Architecture" 
                   fill
                   priority
@@ -82,10 +82,10 @@ export function EditorialStorytelling() {
                 />
               </motion.div>
             </div>
-            <div className="w-1/2 h-full relative overflow-hidden mb-12">
+            <div className="w-1/2 h-[85%] relative overflow-hidden mb-auto">
               <motion.div style={{ y: y2 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2025&auto=format&fit=crop" 
+                  src="/arch-2.jpg" 
                   alt="Luxurious Resort Architecture" 
                   fill
                   priority
