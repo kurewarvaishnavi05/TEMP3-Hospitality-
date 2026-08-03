@@ -1,14 +1,14 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { Award, Star } from 'lucide-react';
+import { Trophy, Star, Crown, Medal } from 'lucide-react';
 import { useEffect, useState, useRef } from 'react';
 
 const awards = [
-  { year: 2025, title: 'World Travel Awards', category: "World's Leading Luxury Hotel" },
-  { year: 2024, title: 'Condé Nast Traveler', category: 'Gold List - Best Resorts' },
-  { year: 2024, title: 'Michelin Guide', category: '3 Stars - Fine Dining' },
-  { year: 2023, title: 'Forbes Travel Guide', category: 'Five-Star Award' },
+  { year: 2025, title: 'World Travel Awards', category: "World's Leading Luxury Hotel", icon: Trophy },
+  { year: 2024, title: 'Condé Nast Traveler', category: 'Gold List - Best Resorts', icon: Star },
+  { year: 2024, title: 'Michelin Guide', category: '3 Stars - Fine Dining', icon: Crown },
+  { year: 2023, title: 'Forbes Travel Guide', category: 'Five-Star Award', icon: Medal },
 ];
 
 const Counter = ({ from, to }: { from: number; to: number }) => {
@@ -99,35 +99,42 @@ export function Awards() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {awards.map((award, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
-              whileHover={{ y: -10 }}
-              className="group flex flex-col p-8 md:p-10 bg-white/40 backdrop-blur-md border border-white/60 hover:border-[#D4B483]/50 transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(212,180,131,0.15)] relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#D4B483]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-bl-full pointer-events-none" />
-              
-              <div className="mb-12 relative z-10">
-                <Award size={32} strokeWidth={1} className="text-[#0D0D0D]/30 group-hover:text-[#D4B483] transition-colors duration-500" />
-              </div>
-              
-              <div className="mt-auto relative z-10">
-                <span className="text-[#D4B483] font-serif text-4xl block mb-4">
-                  <Counter from={2000} to={award.year} />
-                </span>
-                <h3 className="text-[#0D0D0D] font-sans text-xl font-semibold mb-2">
-                  {award.title}
-                </h3>
-                <p className="text-[#0D0D0D]/60 text-sm">
-                  {award.category}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+          {awards.map((award, i) => {
+            const Icon = award.icon;
+            return (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.15, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+                whileHover={{ y: -10 }}
+                className="group flex flex-col p-8 md:p-10 bg-white border border-[#0D0D0D]/5 transition-all duration-500 shadow-sm hover:shadow-2xl relative overflow-hidden rounded-sm"
+              >
+                {/* Decorative top accent line */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-[#D4B483] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#D4B483]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-bl-full pointer-events-none" />
+                
+                <div className="mb-12 relative z-10 transform transition-transform duration-500 group-hover:scale-110 origin-left">
+                  <Icon size={32} strokeWidth={1.5} className="text-[#0D0D0D]/40 group-hover:text-[#D4B483] transition-colors duration-500" />
+                </div>
+                
+                <div className="mt-auto relative z-10">
+                  <span className="text-[#D4B483] font-serif text-4xl block mb-4 group-hover:scale-105 transition-transform duration-500 origin-left">
+                    <Counter from={2000} to={award.year} />
+                  </span>
+                  <div className="w-8 h-px bg-[#D4B483]/50 mb-4 group-hover:w-16 transition-all duration-500"></div>
+                  <h3 className="text-[#0D0D0D] font-sans text-xl font-medium mb-2">
+                    {award.title}
+                  </h3>
+                  <p className="text-[#0D0D0D]/60 text-sm">
+                    {award.category}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
