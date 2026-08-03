@@ -26,7 +26,7 @@ export default function BookingPage() {
       <section ref={container} className="relative w-full h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 w-full h-full z-0">
           <img
-            src="https://images.unsplash.com/photo-1542314831-c6a4d14d8c53?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
             alt="Luxury Resort view"
             className="w-full h-full object-cover opacity-90"
           />
