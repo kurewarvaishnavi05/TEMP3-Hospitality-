@@ -53,7 +53,7 @@ export function VisionaryPillars() {
               transition={{ delay: idx * 0.2, duration: 0.8 }}
               className="flex flex-col"
             >
-              <div className="relative aspect-[3/4] w-full mb-8 overflow-hidden group">
+              <div className="relative aspect-[3/4] w-3/4 max-w-sm mx-auto md:mx-0 mb-8 overflow-hidden group">
                 <Image 
                   src={founder.image} 
                   alt={founder.name}
