@@ -89,7 +89,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="block italic font-light text-[clamp(1.5rem,3vw,2.5rem)] md:text-[clamp(2rem,3.5vw,3.2rem)] lg:text-[clamp(2.8rem,4vw,4rem)] mt-2"
+              className="block italic font-bold text-[clamp(1.5rem,3vw,2.5rem)] md:text-[clamp(2rem,3.5vw,3.2rem)] lg:text-[clamp(2.8rem,4vw,4rem)] mt-2"
             >
               that stays with you.
             </motion.span>
