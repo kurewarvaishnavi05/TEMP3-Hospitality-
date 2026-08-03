@@ -95,7 +95,7 @@ export default function DiningPage() {
             </div>
             <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative">
               <Image
-                src="https://images.unsplash.com/photo-1572116469696-31de0f17ce67?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop"
                 alt="The Lounge Bar"
                 fill
                 className="object-cover"
