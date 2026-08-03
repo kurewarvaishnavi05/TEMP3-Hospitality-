@@ -73,7 +73,7 @@ export function OurJourney() {
             <div className="grid grid-cols-2 gap-4 h-full items-center">
               <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-xl group mt-12">
                 <Image 
-                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop" 
                   alt="Luxury Hotel Exterior"
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -81,7 +81,7 @@ export function OurJourney() {
               </div>
               <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-xl group mb-12">
                 <Image 
-                  src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop" 
                   alt="Luxury Hotel Interior"
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
