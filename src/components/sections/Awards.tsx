@@ -44,7 +44,7 @@ const Counter = ({ from, to }: { from: number; to: number }) => {
 
 export function Awards() {
   return (
-    <section className="py-32 bg-[#F8F5F0] relative overflow-hidden">
+    <section className="py-16 bg-[#F8F5F0] relative overflow-hidden">
       {/* Subtle Grain Texture */}
       <div 
         className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-multiply"
@@ -52,7 +52,7 @@ export function Awards() {
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-end mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-end mb-12">
           <div>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -95,7 +95,7 @@ export function Awards() {
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
-          className="w-full h-px bg-[#D4B483]/40 origin-left mb-24"
+          className="w-full h-px bg-[#D4B483]/40 origin-left mb-12"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
