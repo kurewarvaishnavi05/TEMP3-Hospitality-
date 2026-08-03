@@ -39,7 +39,7 @@ export function Hero() {
           <img
             src="/aura-hero.jpg.jpeg?v=1"
             alt="Luxury Hotel Entrance"
-            className="object-cover object-bottom w-full h-full pointer-events-none absolute inset-0"
+            className="object-cover object-top w-full h-full pointer-events-none absolute inset-0"
           />
         </div>
       </motion.div>
