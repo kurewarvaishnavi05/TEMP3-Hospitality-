@@ -1,6 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
 import { EditorialStorytelling } from "@/components/sections/EditorialStorytelling";
-import { LuxuryGallery } from "@/components/sections/LuxuryGallery";
 import { Awards } from "@/components/sections/Awards";
 import { VisionaryPillars } from "@/components/sections/VisionaryPillars";
 import { LuxuryCard } from "@/components/cards/LuxuryCard";
@@ -53,7 +52,6 @@ export default function Home() {
         </div>
       </section>
 
-      <LuxuryGallery />
       <Awards />
       <VisionaryPillars />
     </>
