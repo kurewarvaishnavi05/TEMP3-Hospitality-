@@ -125,7 +125,7 @@ export function Awards() {
                     <Counter from={2000} to={award.year} />
                   </span>
                   <div className="w-8 h-px bg-[#D4B483]/50 mb-4 group-hover:w-16 transition-all duration-500"></div>
-                  <h3 className="text-[#0D0D0D] font-sans text-xl font-medium mb-2">
+                  <h3 className="text-[#D4B483] font-sans text-xl font-medium mb-2">
                     {award.title}
                   </h3>
                   <p className="text-[#0D0D0D]/60 text-sm">
