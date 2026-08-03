@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export function OurPhilosophy() {
   return (
@@ -60,22 +59,6 @@ export function OurPhilosophy() {
           Aura is more than a destination; it is an emotion. Our philosophy is rooted in anticipating your desires before they arise, crafting an environment where nature's serenity meets architectural brilliance, and ensuring every interaction is infused with genuine warmth and care.
         </motion.p>
         
-        <motion.div 
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, duration: 1 }}
-          className="mt-24 relative w-full aspect-[21/9] lg:aspect-[3/1] max-w-6xl mx-auto overflow-hidden group shadow-2xl"
-        >
-          <div className="absolute inset-0 bg-[#d4b483]/5 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none"></div>
-          <Image 
-            src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=2070&auto=format&fit=crop" 
-            alt="Luxurious resort setting representing our philosophy"
-            fill
-            className="object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-105"
-          />
-        </motion.div>
-
       </div>
     </section>
   );
