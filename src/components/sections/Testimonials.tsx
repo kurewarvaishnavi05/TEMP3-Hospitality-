@@ -75,7 +75,7 @@ export function Testimonials() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/70 to-[#0D0D0D]/40" />
+          {/* Removed overlay to make image clearly visible as requested */}
         </motion.div>
       </AnimatePresence>
 
