@@ -18,10 +18,10 @@ export function EditorialStorytelling() {
   return (
     <section ref={container} className="bg-[#0a0a0a] relative overflow-hidden py-24 lg:py-40">
         {/* Story 1 */}
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-0 mb-40 w-full pl-6 lg:pl-[max(2rem,calc((100vw-1400px)/2))] relative">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16 mb-40 w-full px-6 lg:px-[max(2rem,calc((100vw-1400px)/2))] relative">
           
           {/* Text Content */}
-          <div className="w-full lg:w-[45%] flex flex-col items-start z-20 pr-6 lg:pr-16 lg:py-20 relative">
+          <div className="w-full lg:w-[50%] flex flex-col items-start z-20 lg:py-20 relative">
             <div className="flex flex-col mb-8">
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
@@ -76,19 +76,17 @@ export function EditorialStorytelling() {
             </motion.p>
           </div>
           
-          <div className="w-full lg:w-[55%] h-[60vh] lg:h-[100vh] min-h-[500px] lg:min-h-[700px] relative overflow-hidden z-10">
+          <div className="w-full lg:w-[45%] h-[50vh] lg:h-[70vh] min-h-[400px] lg:min-h-[550px] relative overflow-hidden z-10">
             <motion.div style={{ y: y1 }} className="absolute inset-0 -top-[10%] -bottom-[10%]">
               <Image 
                 src="/hotel-arrival.jpg" 
                 alt="Grand Hotel Lobby Experience" 
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 60vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
               />
             </motion.div>
-            {/* Dark gradient overlay on the left edge of the image to blend it with the background */}
-            <div className="absolute inset-y-0 left-0 w-[40%] bg-gradient-to-r from-[#0a0a0a] to-transparent pointer-events-none hidden lg:block"></div>
           </div>
         </div>
 
