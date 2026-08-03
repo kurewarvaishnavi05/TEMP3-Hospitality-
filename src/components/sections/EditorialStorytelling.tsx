@@ -56,7 +56,7 @@ export function EditorialStorytelling() {
           <div className="w-full lg:w-[50%] h-[80vh] min-h-[600px] relative overflow-hidden z-10">
             <motion.div style={{ y: y1 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
               <Image 
-                src="https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=2070&auto=format&fit=crop" 
+                src="/hotel-arrival.jpg" 
                 alt="Grand Hotel Lobby Experience" 
                 fill
                 priority
