@@ -121,7 +121,7 @@ export function Awards() {
                 </div>
                 
                 <div className="mt-auto relative z-10">
-                  <span className="text-[#D4B483] font-serif text-4xl block mb-4 group-hover:scale-105 transition-transform duration-500 origin-left">
+                  <span className="text-[#0D0D0D] font-serif text-4xl block mb-4 group-hover:scale-105 transition-transform duration-500 origin-left">
                     <Counter from={2000} to={award.year} />
                   </span>
                   <div className="w-8 h-px bg-[#D4B483]/50 mb-4 group-hover:w-16 transition-all duration-500"></div>
