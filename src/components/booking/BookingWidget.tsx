@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Calendar, User, Search, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export function BookingWidget() {
   const [checkIn, setCheckIn] = useState('');
@@ -83,13 +84,15 @@ export function BookingWidget() {
         </div>
 
         {/* CTA */}
-        <button 
-          className="w-full lg:w-auto px-8 py-4 bg-accent text-background hover:bg-white transition-colors flex items-center justify-center gap-2 text-sm uppercase tracking-widest flex-shrink-0"
-          data-magnetic="true"
-        >
-          <Search size={16} />
-          <span>Check Availability</span>
-        </button>
+        <Link href="/book" className="w-full lg:w-auto flex-shrink-0">
+          <button 
+            className="w-full h-full px-8 py-4 bg-accent text-background hover:bg-white transition-colors flex items-center justify-center gap-2 text-sm uppercase tracking-widest"
+            data-magnetic="true"
+          >
+            <Search size={16} />
+            <span>Check Availability</span>
+          </button>
+        </Link>
 
       </div>
     </motion.div>

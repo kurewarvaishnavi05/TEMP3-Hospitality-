@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Compass } from 'lucide-react';
 
 export function OurJourney() {
@@ -56,10 +57,12 @@ export function OurJourney() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <button className="group flex items-center gap-4 text-sm font-semibold tracking-widest uppercase hover:text-[#D4B483] transition-colors text-[#0D0D0D]">
-                <span className="w-8 h-px bg-current transition-all group-hover:w-12"></span>
-                Discover Our Story
-              </button>
+              <Link href="/about">
+                <button className="group flex items-center gap-4 text-sm font-semibold tracking-widest uppercase hover:text-[#D4B483] transition-colors text-[#0D0D0D]">
+                  <span className="w-8 h-px bg-current transition-all group-hover:w-12"></span>
+                  Discover Our Story
+                </button>
+              </Link>
             </motion.div>
           </div>
           

@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DiningPage() {
   const container = useRef<HTMLDivElement>(null);
@@ -66,12 +67,16 @@ export default function DiningPage() {
                 Led by our Michelin-starred executive chef, The Signature offers an avant-garde approach to local cuisine. We source the finest seasonal ingredients to create dishes that are both visually stunning and profoundly flavorful.
               </p>
               <div className="flex flex-col sm:flex-row gap-5">
-                <button className="px-8 py-3.5 bg-[#b09677] text-white hover:bg-white hover:text-black transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium">
-                  Reserve a Table
-                </button>
-                <button className="px-8 py-3.5 border border-[#b09677]/60 text-[#b09677] hover:border-[#b09677] transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium">
-                  View Menu
-                </button>
+                <Link href="/book">
+                  <button className="px-8 py-3.5 bg-[#b09677] text-white hover:bg-white hover:text-black transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium w-full sm:w-auto">
+                    Reserve a Table
+                  </button>
+                </Link>
+                <Link href="/dining#menu">
+                  <button className="px-8 py-3.5 border border-[#b09677]/60 text-[#b09677] hover:border-[#b09677] transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium w-full sm:w-auto">
+                    View Menu
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -88,9 +93,11 @@ export default function DiningPage() {
               <p className="text-[#3a3a3a]/70 leading-[1.8] text-[16px] md:text-[18px] mb-10 max-w-md">
                 Unwind in our sophisticated lounge. Our master mixologists craft bespoke cocktails using premium spirits and house-made infusions, perfectly complemented by a curated selection of rare wines and artisanal bites.
               </p>
-              <button className="px-8 py-3.5 border border-[#b09677] text-[#b09677] hover:bg-[#b09677] hover:text-white transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium">
-                Explore the Lounge
-              </button>
+              <Link href="/dining#lounge">
+                <button className="px-8 py-3.5 border border-[#b09677] text-[#b09677] hover:bg-[#b09677] hover:text-white transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium">
+                  Explore the Lounge
+                </button>
+              </Link>
             </div>
             <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative overflow-hidden">
               <img

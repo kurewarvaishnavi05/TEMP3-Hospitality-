@@ -57,7 +57,7 @@ export function Navbar() {
               ))}
             </nav>
             <Link 
-              href="/booking" 
+              href="/book" 
               className="ml-4 px-6 py-3 border border-[#f8f6f0]/30 hover:border-[#f8f6f0] transition-colors text-[11px] tracking-[0.15em] uppercase"
             >
               BOOK NOW
@@ -120,7 +120,7 @@ export function Navbar() {
                 className="mt-12 pt-10 border-t border-white/10 w-full max-w-xs"
               >
                 <Link
-                  href="/booking"
+                  href="/book"
                   onClick={() => setMobileMenuOpen(false)}
                   className="inline-flex items-center gap-4 px-8 py-4 border border-[#b09677]/40 text-[#b09677] hover:bg-[#b09677] hover:text-[#0a0a0a] transition-all duration-300 text-[10px] tracking-[0.2em] uppercase font-medium w-full justify-center group"
                 >
