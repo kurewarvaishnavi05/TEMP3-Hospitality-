@@ -83,7 +83,7 @@ export function Awards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-[#0D0D0D]/70 font-sans text-lg max-w-md leading-relaxed">
+            <p className="text-[#D4B483] font-sans text-lg max-w-md leading-relaxed">
               Our commitment to perfection has been consistently recognized by the world's most prestigious travel and culinary authorities, setting a new benchmark in luxury hospitality.
             </p>
           </motion.div>
