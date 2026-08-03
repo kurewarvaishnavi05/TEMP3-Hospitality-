@@ -6,7 +6,7 @@ import Image from 'next/image';
 export function OurPhilosophy() {
   return (
     <section className="py-20 bg-[#0a0a0a] relative overflow-hidden flex flex-col items-center justify-center border-t border-white/5">
-      <div className="container mx-auto px-6 z-10">
+      <div className="w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-12 z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -18,12 +18,12 @@ export function OurPhilosophy() {
             transition={{ duration: 1 }}
             className="hidden lg:block lg:col-span-3"
           >
-            <div className="relative aspect-[3/5] w-full overflow-hidden group">
+            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm">
               <Image 
                 src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1000&auto=format&fit=crop" 
                 alt="Luxury Hotel Philosophy"
                 fill
-                className="object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
               />
             </div>
           </motion.div>
@@ -81,12 +81,12 @@ export function OurPhilosophy() {
             transition={{ duration: 1 }}
             className="hidden lg:block lg:col-span-3"
           >
-            <div className="relative aspect-[3/5] w-full overflow-hidden group">
+            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm">
               <Image 
                 src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=1000&auto=format&fit=crop" 
                 alt="Luxurious resort setting"
                 fill
-                className="object-cover opacity-80 group-hover:opacity-100 transition-all duration-1000 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
               />
             </div>
           </motion.div>
