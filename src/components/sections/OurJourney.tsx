@@ -70,13 +70,23 @@ export function OurJourney() {
             transition={{ duration: 0.8 }}
             className="w-full lg:w-1/2"
           >
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm shadow-xl group">
-              <Image 
-                src="https://images.unsplash.com/photo-1551882547-ff40c0d129df?q=80&w=1200&auto=format&fit=crop" 
-                alt="Our Journey"
-                fill
-                className="object-cover transition-transform duration-1000 group-hover:scale-105"
-              />
+            <div className="grid grid-cols-2 gap-4 h-full items-center">
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-xl group mt-12">
+                <Image 
+                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Luxury Hotel Exterior"
+                  fill
+                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+              </div>
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-xl group mb-12">
+                <Image 
+                  src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Luxury Hotel Interior"
+                  fill
+                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+              </div>
             </div>
           </motion.div>
 
