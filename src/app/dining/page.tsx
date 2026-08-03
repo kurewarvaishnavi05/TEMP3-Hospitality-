@@ -52,12 +52,11 @@ export default function DiningPage() {
       <section className="py-24 lg:py-32 bg-[#0a0a0a] text-[#f8f6f0]">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-            <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative order-2 lg:order-1">
-              <Image
-                src="/aura-hero.jpg.jpeg"
+            <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative order-2 lg:order-1 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop"
                 alt="Signature Restaurant"
-                fill
-                className="object-cover transition-all duration-700"
+                className="w-full h-full object-cover transition-all duration-700"
               />
             </div>
             <div className="w-full lg:w-1/2 order-1 lg:order-2">
@@ -93,12 +92,11 @@ export default function DiningPage() {
                 Explore the Lounge
               </button>
             </div>
-            <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative">
-              <Image
-                src="/hotel-arrival.jpg"
+            <div className="w-full lg:w-1/2 h-[70vh] min-h-[500px] relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop"
                 alt="The Lounge Bar"
-                fill
-                className="object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
