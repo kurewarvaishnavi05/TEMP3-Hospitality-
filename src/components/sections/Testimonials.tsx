@@ -11,7 +11,7 @@ const testimonials = [
     quote: "An unparalleled experience. The attention to detail and personalized service made our stay truly unforgettable. The ocean villa exceeded all expectations.",
     author: "Elena Rodriguez",
     country: "Spain",
-    image: "https://images.unsplash.com/photo-1542314831-c53cd4b85ca4?q=80&w=2070&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2070&auto=format&fit=crop", 
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
     quote: "The culinary journey at Aura is spectacular. Every meal was a masterpiece, perfectly complemented by the breathtaking architecture and sunset views.",
     author: "James Chen",
     country: "Singapore",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1537565266759-34df1686ce88?q=80&w=2070&auto=format&fit=crop", 
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     quote: "A sanctuary of tranquility. The wellness spa treatments combined with the serene environment provided the perfect escape from city life.",
     author: "Sarah Sterling",
     country: "United Kingdom",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop", 
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2070&auto=format&fit=crop", 
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop"
   }
 ];
