@@ -55,14 +55,12 @@ export function Hero() {
           <img
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Hospitality Hotel Service"
-            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0 opacity-60"
+            className="object-cover object-center w-full h-full pointer-events-none absolute inset-0"
           />
         </motion.div>
       </motion.div>
 
-      {/* Warm dark overlay (35-45%) */}
-      <div className="absolute inset-0 bg-[#12100e]/40 z-0"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 via-transparent to-transparent z-0"></div>
+      {/* Overlays removed per user request */}
 
       {/* Content */}
       <div className="relative z-10 w-full h-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col justify-center">
