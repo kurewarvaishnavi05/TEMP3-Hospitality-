@@ -67,7 +67,7 @@ export function Hero() {
       <div className="relative z-10 w-full h-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col justify-center">
         <div className="mt-24 md:mt-32">
           <h1 
-            className="font-serif mb-5 leading-[1.05] max-w-[800px] text-[#E3D8C8] text-[clamp(2rem,4vw,3.5rem)] md:text-[clamp(2.8rem,5vw,4.5rem)] lg:text-[clamp(3.5rem,5.5vw,5.5rem)] antialiased"
+            className="font-serif font-bold mb-5 leading-[1.05] max-w-[800px] text-[#E3D8C8] text-[clamp(2rem,4vw,3.5rem)] md:text-[clamp(2.8rem,5vw,4.5rem)] lg:text-[clamp(3.5rem,5.5vw,5.5rem)] antialiased"
           >
             <motion.span 
               initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="block italic text-[clamp(1.5rem,3vw,2.5rem)] md:text-[clamp(2rem,3.5vw,3.2rem)] lg:text-[clamp(2.8rem,4vw,4rem)] mt-2"
+              className="block italic font-light text-[clamp(1.5rem,3vw,2.5rem)] md:text-[clamp(2rem,3.5vw,3.2rem)] lg:text-[clamp(2.8rem,4vw,4rem)] mt-2"
             >
               that stays with you.
             </motion.span>
