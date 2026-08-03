@@ -69,17 +69,31 @@ export function EditorialStorytelling() {
 
         {/* Story 2 */}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-          <div className="w-full lg:w-[50%] h-[80vh] min-h-[600px] relative overflow-hidden z-10">
-            <motion.div style={{ y: y2 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
-              <Image 
-                src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop" 
-                alt="Luxurious Hotel Architecture" 
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </motion.div>
+          <div className="w-full lg:w-[50%] flex gap-4 h-[80vh] min-h-[600px] relative z-10">
+            <div className="w-1/2 h-full relative overflow-hidden mt-12">
+              <motion.div style={{ y: y2 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
+                <Image 
+                  src="https://images.unsplash.com/photo-1542314831-c6a4d27ce6a2?q=80&w=2070&auto=format&fit=crop" 
+                  alt="Modern Hotel Architecture" 
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            </div>
+            <div className="w-1/2 h-full relative overflow-hidden mb-12">
+              <motion.div style={{ y: y2 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
+                <Image 
+                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2025&auto=format&fit=crop" 
+                  alt="Luxurious Resort Architecture" 
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </motion.div>
+            </div>
           </div>
 
           <div className="w-full lg:w-[45%] flex flex-col items-start z-20 lg:-ml-16 bg-surface/80 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none p-6 lg:p-0">
