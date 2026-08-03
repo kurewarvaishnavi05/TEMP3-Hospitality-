@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, MapPin, Phone, Mail, Linkedin, Instagram } from 'lucide-react';
+import { ArrowRight, MapPin, Phone, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -36,10 +36,10 @@ export function Footer() {
             </ul>
             <div className="flex gap-4">
               <a href="#" className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-md hover:bg-[#d4b483] hover:border-[#d4b483] transition-colors group">
-                <Linkedin size={14} className="text-white/70 group-hover:text-black" />
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/70 group-hover:text-black"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
               </a>
               <a href="#" className="w-8 h-8 flex items-center justify-center border border-white/20 rounded-md hover:bg-[#d4b483] hover:border-[#d4b483] transition-colors group">
-                <Instagram size={14} className="text-white/70 group-hover:text-black" />
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/70 group-hover:text-black"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
             </div>
           </div>
