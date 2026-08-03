@@ -65,7 +65,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full h-full max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col justify-center">
-        <div className="-mt-32 md:-mt-48">
+        <div className="-mt-12 md:-mt-20">
           <h1 
             className="font-serif mb-5 leading-[1.05] max-w-[800px] text-[#E3D8C8] text-[clamp(2rem,4vw,3.5rem)] md:text-[clamp(2.8rem,5vw,4.5rem)] lg:text-[clamp(3.5rem,5.5vw,5.5rem)] antialiased"
           >
