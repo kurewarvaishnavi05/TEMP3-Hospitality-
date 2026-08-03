@@ -83,9 +83,9 @@ export default function DiningPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
             <div className="w-full lg:w-1/2">
-              <span className="text-[12px] tracking-[0.2em] uppercase text-[#b09677] font-bold mb-6 block">The Lounge Bar</span>
+              <span className="text-[14px] tracking-[0.2em] uppercase text-[#b09677] font-bold mb-6 block">The Lounge Bar</span>
               <h2 className="font-serif text-[32px] md:text-[48px] leading-[1.1] text-[#3a3a3a] font-light mb-8">Craft Cocktails <br/> & Conversations</h2>
-              <p className="text-[#3a3a3a]/70 leading-[1.8] text-[15px] md:text-[16px] mb-10 max-w-md">
+              <p className="text-[#3a3a3a]/70 leading-[1.8] text-[16px] md:text-[18px] mb-10 max-w-md">
                 Unwind in our sophisticated lounge. Our master mixologists craft bespoke cocktails using premium spirits and house-made infusions, perfectly complemented by a curated selection of rare wines and artisanal bites.
               </p>
               <button className="px-8 py-3.5 border border-[#b09677] text-[#b09677] hover:bg-[#b09677] hover:text-white transition-colors duration-300 text-[10px] tracking-[0.2em] uppercase font-medium">
