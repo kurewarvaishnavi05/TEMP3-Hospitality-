@@ -18,7 +18,7 @@ export function OurPhilosophy() {
             transition={{ duration: 1 }}
             className="hidden lg:block lg:col-span-3"
           >
-            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm">
+            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm shadow-xl">
               <Image 
                 src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1000&auto=format&fit=crop" 
                 alt="Luxury Hotel Philosophy"
@@ -81,9 +81,9 @@ export function OurPhilosophy() {
             transition={{ duration: 1 }}
             className="hidden lg:block lg:col-span-3"
           >
-            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm">
+            <div className="relative aspect-[4/5] w-full overflow-hidden group rounded-sm shadow-xl">
               <Image 
-                src="https://images.unsplash.com/photo-1542314831-c6a4d14d8373?q=80&w=1000&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1000&auto=format&fit=crop" 
                 alt="Luxurious resort setting"
                 fill
                 className="object-cover transition-transform duration-1000 group-hover:scale-105"
