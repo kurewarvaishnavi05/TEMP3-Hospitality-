@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section ref={container} className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center">
         <motion.div style={{ y, opacity }} className="absolute inset-0 w-full h-full z-0">
           <Image
-            src="https://images.unsplash.com/photo-1542314831-c6a4d27ce6a2?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
             alt="Hotel Exterior"
             fill
             priority
