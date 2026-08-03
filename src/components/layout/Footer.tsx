@@ -11,12 +11,7 @@ export function Footer() {
           
           {/* Col 1: Logo & Info */}
           <div className="flex flex-col">
-            <h2 className="text-5xl font-serif text-[#d4b483] tracking-[0.3em] mb-4 drop-shadow-sm">A U R A</h2>
-            <div className="w-full flex items-center gap-2 mb-8 opacity-40">
-              <div className="h-px bg-white/20 flex-grow"></div>
-              <div className="w-1.5 h-1.5 bg-[#d4b483] rotate-45"></div>
-              <div className="h-px bg-white/20 flex-grow"></div>
-            </div>
+            <h2 className="text-5xl font-serif text-[#d4b483] tracking-[0.3em] mb-8 drop-shadow-sm">A U R A</h2>
             <p className="text-white/70 text-xs mb-8 leading-loose font-light">
               Building hospitality brands and experiences that create a lasting impact.
             </p>
