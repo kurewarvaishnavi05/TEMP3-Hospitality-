@@ -20,8 +20,8 @@ export function EditorialStorytelling() {
       <div className="container mx-auto px-6">
         
         {/* Story 1 */}
-        <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-10 mb-40 relative">
-          <div className="w-full lg:w-[45%] flex flex-col items-start z-20 lg:pb-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mb-40">
+          <div className="w-full lg:w-[45%] flex flex-col items-start z-20 lg:-mr-16 bg-surface/80 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none p-6 lg:p-0">
             <motion.span 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -53,14 +53,14 @@ export function EditorialStorytelling() {
             </motion.p>
           </div>
           
-          <div className="w-full lg:w-[60%] h-[70vh] min-h-[600px] relative overflow-hidden lg:-ml-20 z-10">
+          <div className="w-full lg:w-[50%] h-[80vh] min-h-[600px] relative overflow-hidden z-10">
             <motion.div style={{ y: y1 }} className="absolute inset-0 -top-[20%] -bottom-[20%]">
               <Image 
-                src="https://images.unsplash.com/photo-1542314831-c6a4d27ce6a2?q=80&w=2070&auto=format&fit=crop" 
-                alt="Grand Hotel Lobby" 
+                src="https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=2070&auto=format&fit=crop" 
+                alt="Grand Hotel Lobby Experience" 
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 60vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </motion.div>
